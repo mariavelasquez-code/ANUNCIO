@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Salchi Express</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin:0;
+    background:#1c1c1c;
+    color:#f5f5f5;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.afiche{
+    width:1100px;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:38% 62%;
+    background:#1c1c1c;
+}
+
+/* ================= IZQUIERDA ================= */
+.izquierda{
+    background:#1c1c1c;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.logo img{
+    width:100%;
+    max-width:300px;
+}
+
+.slogan{
+    margin-top:10px;
+    font-size:22px;
+    color:#d4a017;
+}
+
+.whatsapp{
+    font-size:34px;
+    font-weight:bold;
+    margin:20px 0;
+    color:#25D366;
+}
+
+.imagen{
+    width:100%;
+    margin:18px 0;
+}
+
+.imagen img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(0,0,0,.6);
+}
+
+.redes{
+    margin-top:auto;
+    background:#2b2b2b;
+    padding:18px;
+    border-radius:12px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* ================= DERECHA ================= */
+.derecha{
+    background:transparent;
+}
+
+/* CABECERA */
+.cabecera{
+    padding:22px;
+    text-align:center;
+}
+
+.cabecera h1{
+    margin:0;
+    font-size:54px;
+    color:#b11226;
+    letter-spacing:1px;
+}
+
+/* SECCIONES */
+.seccion{
+    padding:22px 30px;
+    border-top:10px solid #1c1c1c;
+}
+
+.titulo{
+    font-size:34px;
+    color:#b11226;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:14px;
+}
+
+.descripcion{
+    font-size:21px;
+    margin-bottom:14px;
+    color:#f5f5f5;
+}
+
+.precios{
+    font-size:23px;
+}
+
+.fila{
+    display:flex;
+    justify-content:space-between;
+    margin:8px 0;
+    font-weight:bold;
+}
+
+.precio{
+    color:#d4a017;
+}
+
+/* HORARIO */
+.horario{
+    background:#1c1c1c;
+    padding:26px;
+    text-align:center;
+    border-top:6px solid #d4a017;
+}
+
+.horario h3{
+    color:#d4a017;
+    font-size:32px;
+    margin-bottom:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="afiche">
+
+    <!-- IZQUIERDA -->
+    <div class="izquierda">
+
+        <div class="logo">
+            <img src="logo.jpg" alt="Salchi Express">
+        </div>
+
+        <div class="slogan">¡Deliciosamente rápido!</div>
+
+        <div class="whatsapp">📱 60630675</div>
+
+        <div class="imagen">
+            <img src="plato1.jpg" alt="Salchi Especial">
+        </div>
+
+        <div class="imagen">
+            <img src="plato2.jpg" alt="Full Carne">
+        </div>
+
+        <div class="imagen">
+            <img src="plato3.jpg" alt="Rollitos Express">
+        </div>
+
+    </div>
+
+    <!-- DERECHA -->
+    <div class="derecha">
+
+        <div class="cabecera">
+            <h1>Salchi Express</h1>
+        </div>
+
+        <div class="seccion">
+            <div class="titulo">TÍPICA</div>
+            <div class="descripcion">
+                (2 tipos de salchichas, choclitos, queso, papas, salsas)
+            </div>
+            <div class="precios">
+                <div class="fila"><span>1 persona</span><span class="precio">Bs. 25</span></div>
+                <div class="fila"><span>2/3 personas</span><span class="precio">Bs. 55</span></div>
+                <div class="fila"><span>4/5 personas</span><span class="precio">Bs. 75</span></div>
+                <div class="fila"><span>7/8 personas</span><span class="precio">Bs. 150</span></div>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <div class="titulo">ESPECIAL</div>
+            <div class="descripcion">
+                (1 tira de carne, 2 tipos de salchichas, queso, papas, salsas)
+            </div>
+            <div class="precios">
+                <div class="fila"><span>1 persona</span><span class="precio">Bs. 30</span></div>
+                <div class="fila"><span>2/3 personas</span><span class="precio">Bs. 65</span></div>
+                <div class="fila"><span>4/5 personas</span><span class="precio">Bs. 85</span></div>
+                <div class="fila"><span>7/8 personas</span><span class="precio">Bs. 170</span></div>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <div class="titulo">FULL CARNE</div>
+            <div class="descripcion">
+                (tocino, chorizo, carnes, salchichas, queso, papas, salsas)
+            </div>
+            <div class="precios">
+                <div class="fila"><span>1 persona</span><span class="precio">Bs. 35</span></div>
+                <div class="fila"><span>2/3 personas</span><span class="precio">Bs. 75</span></div>
+                <div class="fila"><span>4/5 personas</span><span class="precio">Bs. 105</span></div>
+                <div class="fila"><span>7/8 personas</span><span class="precio">Bs. 190</span></div>
+            </div>
+        </div>
+
+        <div class="seccion">
+            <div class="titulo">ROLLITOS EXPRESS</div>
+            <div class="precios">
+                <div class="fila"><span>6 rollitos express</span><span class="precio">Bs. 65</span></div>
+                <div class="fila"><span>1 rollito express</span><span class="precio">Bs. 8</span></div>
+            </div>
+        </div>
+
+        <div class="horario">
+            <h3>HORARIO DE ATENCIÓN</h3>
+            LU - MAR - MIER-JUE - VIE - SÁB - DOM<br>
+            <strong>18:00 A 22:00</strong>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
